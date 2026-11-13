@@ -95,14 +95,3 @@ Every arrow represents a state transition validated by deterministic policy or a
 - [Illustrative release policy](examples/release-gates.yaml)
 - [Agent and skill samples](.github/agents/requirements-analyst.agent.md)
 
-## Using this repository on a corporate computer
-
-1. Obtain organization approval before transferring any content from a personal repository to a corporate development environment.
-2. Review the [security and data-handling guidance](docs/13-security-risk-controls.md).
-3. Clone it **as a reference repository**. Do not blindly copy sample files or enable MCP tools/permissions in a production workspace.
-4. Adapt design artifacts to the actual CLM platform after reviewing its repositories, approved architecture and corporate CI/CD controls.
-5. Treat `everything-copilot` as a **separate existing toolkit**, not something this blueprint alters.
-
-## Public repository and responsible reuse
-
-This repository is intentionally **public** and contains a generic reference blueprint, not corporate-approved CLM architecture or an implemented automation system. Do not publish actual company tickets, confidential design documents, customer data, logs, secrets, API keys, or internal service identifiers here. Use an organization-approved repository for real project implementation and operational evidence. The [publishing and reuse notes](PUBLISHING.md) explain how to keep this public reference separate from corporate work.
