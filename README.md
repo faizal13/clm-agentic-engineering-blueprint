@@ -103,6 +103,6 @@ Every arrow represents a state transition validated by deterministic policy or a
 4. Adapt design artifacts to the actual CLM platform after reviewing its repositories, approved architecture and corporate CI/CD controls.
 5. Treat `everything-copilot` as a **separate existing toolkit**, not something this blueprint alters.
 
-## Publication
+## Public repository and responsible reuse
 
-This package is designed to live in a **private GitHub repository**. The supporting [publication instructions](PUBLISHING.md) allow publishing after an empty repository is created. **Do not mistake an unpushed local bundle for an existing GitHub repository.**
+This repository is intentionally **public** and contains a generic reference blueprint, not corporate-approved CLM architecture or an implemented automation system. Do not publish actual company tickets, confidential design documents, customer data, logs, secrets, API keys, or internal service identifiers here. Use an organization-approved repository for real project implementation and operational evidence. The [publishing and reuse notes](PUBLISHING.md) explain how to keep this public reference separate from corporate work.

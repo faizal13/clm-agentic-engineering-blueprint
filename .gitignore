@@ -1,0 +1,23 @@
+# Keep generated, sensitive or local-only content out of the blueprint.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.tfstate
+*.tfstate.*
+.terraform/
+node_modules/
+.venv/
+__pycache__/
+.DS_Store
+.vscode/
+.gitnexus/
+logs/
+secrets/
+credentials/
+*.log

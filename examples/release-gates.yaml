@@ -1,0 +1,26 @@
+# Policy illustration ONLY, not executable CI config and not an organizational approval.
+version: 1
+risk_tiers: [small, feature, major]
+release_target: dev
+required:
+  approved_requirements: true
+  approved_design_for_feature_or_major: true
+  approved_acceptance_spec: true
+  protected_branch: true
+  independent_pr_review: true
+  immutable_artifact: true
+  build_unit_contract_integration_pass: true
+  secret_scan_pass: true
+  security_scan_pass: true
+  runtime_business_validation_pass: true
+agent_policy:
+  production_deploy_allowed: false
+  production_database_mutation_allowed: false
+  modify_approved_acceptance_without_approval: false
+  max_repair_attempts_per_failure: 3
+  stop_on_unauthorized_tool_call: true
+  stop_on_unresolved_critical_requirement: true
+  stop_on_unknown_data_integrity_failure: true
+observability:
+  required_ids: [ticket_id, pr, commit_sha, ci_run, artifact_digest, deployment_id]
+  pii_redaction_required: true
